@@ -58,4 +58,40 @@ class StudentRepositoryTest {
         List<Student> students = studentRepository.findByFirstNameContaining("dav");
         System.out.println("students = " + students);
     }
+
+    @Test
+    public void getStudentByLastNameNotNull() {
+        List<Student> students = studentRepository.findByLastNameNotNull();
+        System.out.println("students = " + students);
+    }
+
+    @Test
+    public void getStudentByGuardianName() {
+        List<Student> students = studentRepository.findByGuardianName("ivan");
+        System.out.println("students = " + students);
+    }
+
+    @Test
+    public void getStudentByEmailAddress() {
+        Student student = studentRepository.getStudentsByEmailAddress("dave.djoh@gmail.com");
+        System.out.println("student = " + student);
+    }
+
+    @Test
+    public void getStudentByEmailAddressNative() {
+        Student student = studentRepository.getStudentsByEmailAddressNative("dave.djoh@gmail.com");
+        System.out.println("student = " + student);
+    }
+
+    @Test
+    public void getStudentByEmailAddressNativeNamedParam() {
+        Student student = studentRepository.getStudentsByEmailAddressNativeNamedParam("dave.djoh@gmail.com");
+        System.out.println("student = " + student);
+    }
+
+    @Test
+    public void updateStudentNameByEmailId() {
+        int result = studentRepository.updateStudentNameByEmailId("dave djoh", "dave.djoh@gmail.com");
+        System.out.println("result = " + result);
+    }
 }
