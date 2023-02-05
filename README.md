@@ -16,8 +16,8 @@ Here are the technologies used in this project.
 
 ## Screenshots
 
-***Unit Test Save Student***
+***Unit Test Save Student without Embedded Class***
 ![Unit Test Save Student](src/main/resources/static/unit_test_create.png)
 
-***Unit Test Student with Embedded***
+***Unit Test Save Student with Embedded Class***
 ![Unit Test Student with Embedded](src/main/resources/static/unit_test_create_embed.png)
