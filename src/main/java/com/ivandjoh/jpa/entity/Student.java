@@ -32,7 +32,11 @@ public class Student {
     private Long studentId;
     private String firstName;
     private String lastName;
-    @Column(unique = true, nullable = false, name = "email_address")
+    @Column(
+            unique = true,
+            nullable = false,
+            name = "email_address"
+    )
     private String emailId;
     private String guardianName;
     private String guardianEmail;
